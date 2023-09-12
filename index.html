@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Invoice Tracker</title>
+  </head>
+  <body>
+    <h1>Invoice Tracker</h1>
+    <p>Date: <span id="currentDate"></span></p>
+    <p>Total Invoices: <span id="totalInvoices">0</span></p>
+    <p>
+      Edit Monthly Target:
+      <input type="number" id="editMonthlyTarget" min="0" />
+    </p>
+    <button onclick="editMonthlyTarget()">Save</button>
+
+    <p>
+      Invoices Completed Today:
+      <input type="number" id="completedToday" min="0" />
+    </p>
+    <button onclick="updateData()">Update</button>
+    <p>
+      Invoices Remaining for the Month: <span id="remainingMonth">750</span>
+    </p>
+    <p>Invoices Remaining for Today: <span id="remainingToday">0</span></p>
+  </body>
+  <script src="script.js"></script>
+</html>
